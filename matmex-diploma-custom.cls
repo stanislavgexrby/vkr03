@@ -136,7 +136,7 @@
 }
 
 % Требует Python с пакетом pygmentize, зато позволяет верстать очень годные листинги с синтаксической подсветкой
-\usepackage[kpsewhich,newfloat]{minted}
+\usepackage[newfloat]{minted}
 
 % Запретим minted подсвечивать по его мнению лексические ошибки
 \AtBeginEnvironment{minted}{\dontdofcolorbox}
@@ -155,9 +155,9 @@
 % \setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
 % \setenumerate{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
 
-\usepackage[useregional]{datetime2} % Форматирование дат
-\usepackage[normalem]{ulem} % Дополнительные варианты форматирования текста, например подчеркивание или зачеркивание
-\usepackage{microtype} % Полезные типографические ништячки, по-хорошему требует LuaLaTeX
+% \usepackage[useregional]{datetime2} % Форматирование дат
+% \usepackage[normalem]{ulem} % Дополнительные варианты форматирования текста, например подчеркивание или зачеркивание
+% \usepackage{microtype} % Полезные типографические ништячки, по-хорошему требует LuaLaTeX
 \usepackage[autostyle]{csquotes} % Правильные кавычки в зависимости от языка
 
 %% Разное
