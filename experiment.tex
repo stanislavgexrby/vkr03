@@ -399,38 +399,27 @@ syngt_cli first-follow grammar.grm
 
 \subsubsection{Примеры визуализации}
 
-На рисунках~\ref{fig:diagram_simple}--\ref{fig:diagram_complex} представлены примеры визуализации синтаксических диаграмм для различных конструкций RBNF.
+На рисунках~\ref{fig:diagram_simple}--\ref{fig:diagram_iteration} представлены примеры визуализации синтаксических диаграмм для различных конструкций RBNF.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
-% TODO: Добавить скриншот простой диаграммы (последовательность)
-\fbox{\parbox{0.7\textwidth}{\centering [МЕСТО ДЛЯ СКРИНШОТА: Диаграмма последовательности] \\ \texttt{stmt : 'begin' , stmtlist , 'end'.} \\ \vspace{2cm}}}
+\includegraphics[width=0.8\textwidth]{figures/s1.png}
 \caption{Визуализация последовательности терминалов и нетерминалов}
 \label{fig:diagram_simple}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
-% TODO: Добавить скриншот диаграммы с альтернативами
-\fbox{\parbox{0.7\textwidth}{\centering [МЕСТО ДЛЯ СКРИНШОТА: Диаграмма альтернативы] \\ \texttt{type : 'int' ; 'float' ; 'string'.} \\ \vspace{2cm}}}
+\includegraphics[width=0.8\textwidth]{figures/s2.png}
 \caption{Визуализация альтернативы (OR)}
 \label{fig:diagram_or}
 \end{figure}
 
-\begin{figure}[h]
-\centering
-% TODO: Добавить скриншот диаграммы с итерацией
-\fbox{\parbox{0.7\textwidth}{\centering [МЕСТО ДЛЯ СКРИНШОТА: Диаграмма итерации] \\ \texttt{list : element , @*(',' , element).} \\ \vspace{2cm}}}
-\caption{Визуализация итерации (повторения)}
-\label{fig:diagram_iteration}
-\end{figure}
-
 \begin{figure}[H]
 \centering
-% TODO: Добавить скриншот сложной диаграммы
-\fbox{\parbox{0.7\textwidth}{\centering [МЕСТО ДЛЯ СКРИНШОТА: Сложная диаграмма] \\ \texttt{expr : term , @*(( '+' ; '-' ) , term).} \\ \vspace{2.5cm}}}
-\caption{Визуализация сложной конструкции с вложенными операциями}
-\label{fig:diagram_complex}
+\includegraphics[width=0.8\textwidth]{figures/s3.png}
+\caption{Визуализация итерации (повторения)}
+\label{fig:diagram_iteration}
 \end{figure}
 
 \subsection{Возникшие сложности и их решения}
@@ -654,4 +643,4 @@ SynGT_CPP/
 └── README.md               # Документация проекта
 \end{verbatim}
 
-Такая организация обеспечивает чёткое разделение компонентов, упрощает навигацию по коду и позволяет собирать отдельные части проекта независимо (например, только библиотеку без GUI).
+Такая организация обеспечивает чёткое разделение компонентов, упрощает навигацию по коду и позволяет собирать отдельные части проекта независимо (например, только библиотеку без GUI). Итоговый проект лежит в Git репозитории~\cite{my}.
